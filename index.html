@@ -1,0 +1,1831 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Micheline Lopes Advocacia | Atendimento Jurídico Premium</title>
+<meta name="description" content="Atendimento jurídico estratégico e humanizado para servidores públicos, militares e cidadãos que buscam segurança em suas decisões.">
+
+<!-- Google Fonts: Importando Cinzel para Títulos Premium e Montserrat para Leitura Fluida -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    /* Paleta Extraída Diretamente da Imagem WhatsApp Image 2026-07-16 at 00.33.54.jpeg */
+    --azul-escuro: #111C2E;      /* Fundo profundo */
+    --azul-royal: #1E2F4C;       /* Azul base da marca */
+    --dourado: #C5A059;          /* Ouro acobreado principal */
+    --dourado-claro: #E5C384;    /* Destaques e hovers */
+    --offwhite: #FDFBF7;         /* Fundo claro pérola */
+    --branco: #FFFFFF;
+    --cinza-soft: #F3F5F8;       /* Fundo do FAQ e alternâncias */
+    --grafite: #2C323D;
+    --grafite-suave: #606875;
+    --verde-wa: #1C6D5E;         /* Verde WhatsApp integrado harmonicamente */
+    --verde-wa-hover: #155246;
+
+    /* Tipografia de Acordo com o Guia de Fontes de Advocacia */
+    --serif: 'Cinzel', serif;
+    --sans: 'Montserrat', sans-serif;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--sans);
+    color: var(--grafite);
+    background: var(--offwhite);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    line-height: 1.6;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  .wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--serif);
+    font-weight: 500;
+    color: var(--azul-royal);
+    line-height: 1.2;
+  }
+
+  /* Eyebrows (Mini-títulos decorativos) */
+  .eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: var(--sans);
+    font-size: 11px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: var(--dourado);
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  
+  .eyebrow::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 1px;
+    background: var(--dourado);
+  }
+
+  .section-head {
+    max-width: 700px;
+    margin-bottom: 64px;
+  }
+  
+  .section-head.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  
+  .section-head.center .eyebrow {
+    justify-content: center;
+  }
+  
+  .section-head h2 {
+    font-size: clamp(28px, 3.8vw, 40px);
+    margin-bottom: 18px;
+    font-weight: 600;
+  }
+  
+  .section-head p {
+    color: var(--grafite-suave);
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  /* BOTÕES PREMIUM */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 16px 36px;
+    border-radius: 4px;
+    font-family: var(--sans);
+    font-size: 13.5px;
+    font-weight: 600;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all .35s cubic-bezier(.25, .8, .25, 1);
+    white-space: nowrap;
+  }
+
+  .btn-gold {
+    background: var(--dourado);
+    color: var(--branco);
+    box-shadow: 0 4px 15px rgba(197, 160, 89, 0.2);
+  }
+
+  .btn-gold:hover {
+    background: var(--dourado-claro);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(197, 160, 89, 0.35);
+  }
+
+  .btn-wa {
+    background: var(--verde-wa);
+    color: var(--branco);
+    box-shadow: 0 4px 15px rgba(28, 109, 94, 0.2);
+  }
+
+  .btn-wa:hover {
+    background: var(--verde-wa-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(28, 109, 94, 0.35);
+  }
+
+  .btn-outline {
+    background: transparent;
+    border-color: var(--azul-royal);
+    color: var(--azul-royal);
+  }
+
+  .btn-outline:hover {
+    background: var(--azul-royal);
+    color: var(--branco);
+    transform: translateY(-2px);
+  }
+
+  .btn-outline-gold {
+    background: transparent;
+    border-color: var(--dourado);
+    color: var(--dourado);
+  }
+
+  .btn-outline-gold:hover {
+    background: var(--dourado);
+    color: var(--branco);
+    transform: translateY(-2px);
+  }
+
+  .btn svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+  }
+
+  /* HEADER (NAVBAR GLASSMORPHIC) */
+  header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    padding: 24px 0;
+    transition: all 0.4s ease;
+  }
+
+  header .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* Logotipo Fiel à Estrutura da Marca Original */
+  .brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .brand .logo-title {
+    font-family: var(--serif);
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--branco);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    line-height: 1;
+    transition: color 0.3s ease;
+  }
+
+  .brand .logo-divider {
+    width: 100%;
+    height: 1px;
+    background: var(--dourado);
+    margin: 4px 0;
+  }
+
+  .brand .logo-sub {
+    font-family: var(--serif);
+    font-size: 11px;
+    color: var(--dourado-claro);
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+
+  nav.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  nav.main-nav a {
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 0.05em;
+    position: relative;
+    padding: 4px 0;
+    transition: color 0.3s ease;
+  }
+
+  nav.main-nav a::after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: 0;
+    width: 0; height: 1px;
+    background: var(--dourado-claro);
+    transition: width 0.3s ease;
+  }
+
+  nav.main-nav a:hover {
+    color: var(--branco);
+  }
+
+  nav.main-nav a:hover::after {
+    width: 100%;
+  }
+
+  header .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  header .btn-gold {
+    padding: 10px 20px;
+    font-size: 11.5px;
+  }
+
+  header.scrolled {
+    background: rgba(17, 28, 46, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 14px 0;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+    border-bottom: 1px solid rgba(197, 160, 89, 0.15);
+  }
+
+  /* Hambúrguer */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    z-index: 200;
+  }
+
+  .hamburger span {
+    width: 24px;
+    height: 2px;
+    background: var(--branco);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+
+  .hamburger.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  /* Painel Mobile */
+  .mobile-nav {
+    position: fixed;
+    inset: 0;
+    background: var(--azul-escuro);
+    z-index: 150;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    transform: translateY(-100%);
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .mobile-nav.open {
+    transform: translateY(0);
+  }
+
+  .mobile-nav a {
+    font-family: var(--serif);
+    font-size: 22px;
+    color: var(--branco);
+    letter-spacing: 0.1em;
+    transition: color 0.3s ease;
+  }
+
+  .mobile-nav a:hover {
+    color: var(--dourado-claro);
+  }
+
+  /* HERO SECTION */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, var(--azul-royal) 0%, var(--azul-escuro) 100%);
+    overflow: hidden;
+    padding: 160px 0 100px;
+  }
+
+  /* Linhas douradas abstratas inspiradas no traço do logotipo */
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -10%; right: -5%;
+    width: 600px; height: 600px;
+    border: 1px solid rgba(197, 160, 89, 0.12);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: -15%; left: -5%;
+    width: 400px; height: 400px;
+    border: 1px solid rgba(197, 160, 89, 0.08);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  .hero .wrap {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-text h1 {
+    font-size: clamp(32px, 4.2vw, 48px);
+    color: var(--branco);
+    margin-bottom: 24px;
+    font-weight: 600;
+  }
+
+  .hero-text .lede {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 32px;
+  }
+
+  .hero-benefits {
+    margin: 24px 0 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .hero-benefits li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 400;
+  }
+
+  .hero-benefits svg {
+    width: 18px;
+    height: 18px;
+    color: var(--dourado-claro);
+    flex-shrink: 0;
+  }
+
+  .hero-ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+
+  .trust-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .trust-row span {
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .trust-row span::before {
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--dourado);
+  }
+
+  /* Moldura Fina & Elegante da Foto */
+  .hero-photo {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .photo-frame {
+    position: relative;
+    width: 100%;
+    max-width: 380px;
+    aspect-ratio: 4/5;
+    border: 1px solid rgba(197, 160, 89, 0.4);
+    padding: 16px;
+    background: rgba(17, 28, 46, 0.2);
+    backdrop-filter: blur(5px);
+  }
+
+  .photo-frame .photo-inner {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(150deg, #E2D9CD, #C1B4A1);
+    overflow: hidden;
+    position: relative;
+  }
+
+  .photo-frame .photo-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .photo-frame::before, .photo-frame::after {
+    content: '';
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border-color: var(--dourado);
+    border-style: solid;
+  }
+
+  .photo-frame::before {
+    top: -12px; left: -12px;
+    border-width: 1px 0 0 1px;
+  }
+
+  .photo-frame::after {
+    bottom: -12px; right: -12px;
+    border-width: 0 1px 1px 0;
+  }
+
+  .photo-caption {
+    position: absolute;
+    bottom: -24px; left: 32px;
+    background: var(--branco);
+    padding: 16px 24px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-left: 3px solid var(--dourado);
+  }
+
+  .photo-caption .name {
+    font-family: var(--serif);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--azul-royal);
+  }
+
+  .photo-caption .role {
+    font-size: 11px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--dourado);
+    margin-top: 4px;
+    font-weight: 600;
+  }
+
+  /* SEÇÕES GERAIS */
+  section {
+    padding: 120px 0;
+  }
+
+  .bg-white { background: var(--branco); }
+  .bg-off { background: var(--offwhite); }
+  .bg-azul { 
+    background: var(--azul-royal); 
+    color: var(--branco);
+  }
+
+  .bg-azul .section-head h2 { color: var(--branco); }
+  .bg-azul .section-head p { color: rgba(255, 255, 255, 0.75); }
+  .bg-azul .eyebrow { color: var(--dourado-claro); }
+  .bg-azul .eyebrow::before { background: var(--dourado-claro); }
+
+  /* SOBRE A ADVOGADA */
+  .sobre-grid {
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 80px;
+    align-items: center;
+  }
+
+  .sobre-visual {
+    position: relative;
+  }
+
+  .sobre-visual .frame {
+    aspect-ratio: 3/4;
+    background: linear-gradient(135deg, var(--azul-royal), var(--azul-escuro));
+    position: relative;
+    overflow: hidden;
+  }
+
+  .sobre-visual .frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+    mix-blend-mode: luminosity;
+  }
+
+  .sobre-visual .quote-tag {
+    position: absolute;
+    bottom: -32px; right: -24px; left: 24px;
+    background: var(--dourado);
+    color: var(--branco);
+    padding: 24px 28px;
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.5;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
+
+  .sobre-text p {
+    color: var(--grafite-suave);
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 24px;
+  }
+
+  .sobre-text h2 {
+    font-size: clamp(26px, 3.5vw, 36px);
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+
+  .sobre-text .sub {
+    color: var(--dourado);
+    font-family: var(--serif);
+    font-size: 18px;
+    margin-bottom: 24px;
+    font-weight: 500;
+  }
+
+  /* GRID CARDS: ÁREAS DE ATUÇÃO */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .area-card {
+    background: var(--branco);
+    padding: 48px 36px;
+    border: 1px solid rgba(17, 28, 46, 0.05);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  }
+
+  .area-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(17, 28, 46, 0.08);
+    border-color: rgba(197, 160, 89, 0.3);
+  }
+
+  .area-card .num {
+    font-family: var(--serif);
+    font-size: 14px;
+    color: var(--dourado);
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    margin-bottom: 24px;
+    display: block;
+  }
+
+  .area-card h3 {
+    font-size: 20px;
+    margin-bottom: 16px;
+    font-weight: 600;
+  }
+
+  .area-card p {
+    color: var(--grafite-suave);
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 24px;
+  }
+
+  .area-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--dourado);
+    letter-spacing: 0.05em;
+    transition: all 0.3s ease;
+  }
+
+  .area-link:hover {
+    gap: 12px;
+    color: var(--azul-royal);
+  }
+
+  .areas-cta {
+    text-align: center;
+    margin-top: 56px;
+  }
+
+  /* DIFERENCIAIS COM ESTRUTURA METÁLICA */
+  .dif-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .dif-card {
+    background: var(--azul-royal);
+    padding: 48px 36px;
+    transition: background 0.3s ease;
+  }
+
+  .dif-card:hover {
+    background: var(--azul-escuro);
+  }
+
+  .dif-card .icon {
+    width: 48px;
+    height: 48px;
+    border: 1px solid var(--dourado-claro);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    color: var(--dourado-claro);
+  }
+
+  .dif-card .icon svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .dif-card h3 {
+    color: var(--branco);
+    font-size: 18px;
+    margin-bottom: 14px;
+    font-weight: 600;
+  }
+
+  .dif-card p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .dif-cta {
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  /* COMO FUNCIONA (A JORNADA) */
+  .steps {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+
+  .steps::before {
+    content: '';
+    position: absolute;
+    top: 27px; left: 0; right: 0;
+    height: 1px;
+    background: repeating-linear-gradient(90deg, rgba(197, 160, 89, 0.3) 0 8px, transparent 8px 16px);
+    z-index: 0;
+  }
+
+  .step {
+    position: relative;
+    z-index: 1;
+  }
+
+  .step .step-num {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: var(--branco);
+    border: 2px solid var(--dourado);
+    color: var(--azul-royal);
+    font-family: var(--serif);
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+
+  .step h3 {
+    font-size: 17px;
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+
+  .step p {
+    color: var(--grafite-suave);
+    font-size: 13.5px;
+    line-height: 1.75;
+  }
+
+  .steps-cta {
+    text-align: center;
+    margin-top: 64px;
+  }
+
+  /* CONFIANÇA & COMPLIANCE OAB */
+  .confianca {
+    position: relative;
+    background: linear-gradient(rgba(17, 28, 46, 0.9), rgba(17, 28, 46, 0.9)),
+                url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat fixed;
+    padding: 140px 0;
+    text-align: center;
+    color: var(--branco);
+  }
+
+  .confianca .wrap {
+    max-width: 760px;
+  }
+
+  .confianca h2 {
+    color: var(--branco);
+    font-size: clamp(28px, 4vw, 40px);
+    margin-bottom: 24px;
+    font-weight: 600;
+  }
+
+  .confianca p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 24px;
+  }
+
+  /* FAQ ACCORDION SUTIL */
+  .faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .faq-item {
+    border-bottom: 1px solid rgba(17, 28, 46, 0.08);
+  }
+
+  .faq-q {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 24px 8px;
+    background: none;
+    border: none;
+    text-align: left;
+    font-family: var(--serif);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--azul-royal);
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+
+  .faq-q:hover {
+    color: var(--dourado);
+  }
+
+  .faq-q .plus {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    position: relative;
+  }
+
+  .faq-q .plus::before, .faq-q .plus::after {
+    content: '';
+    position: absolute;
+    background: var(--dourado);
+    transition: transform 0.35s ease;
+  }
+
+  .faq-q .plus::before {
+    top: 50%; left: 0;
+    width: 100%; height: 2px;
+    transform: translateY(-50%);
+  }
+
+  .faq-q .plus::after {
+    left: 50%; top: 0;
+    height: 100%; width: 2px;
+    transform: translateX(-50%);
+  }
+
+  .faq-item.open .plus::after {
+    transform: translateX(-50%) rotate(90deg);
+    opacity: 0;
+  }
+
+  .faq-a {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .faq-a p {
+    padding: 0 8px 24px;
+    color: var(--grafite-suave);
+    font-size: 14.5px;
+    line-height: 1.8;
+  }
+
+  .faq-cta {
+    text-align: center;
+    margin-top: 56px;
+  }
+
+  /* SEÇÃO DE CONTATO COMPLETA (URGENTE) */
+  .contato-split {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 80px;
+  }
+
+  .contato-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contato-info p {
+    color: var(--grafite-suave);
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+  }
+
+  .contato-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 28px;
+    font-size: 14.5px;
+  }
+
+  .contato-list .icon-box {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--dourado);
+    color: var(--dourado);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    flex-shrink: 0;
+  }
+
+  .contato-list .icon-box svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .contato-list .text-content strong {
+    display: block;
+    color: var(--azul-royal);
+    margin-bottom: 4px;
+  }
+
+  /* Formulário Minimalista Premium */
+  .contato-form {
+    background: var(--branco);
+    padding: 48px;
+    box-shadow: 0 15px 40px rgba(17, 28, 46, 0.05);
+    border: 1px solid rgba(17, 28, 46, 0.03);
+    border-top: 4px solid var(--dourado);
+    border-radius: 4px;
+  }
+
+  .form-group {
+    margin-bottom: 28px;
+  }
+
+  .form-group label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--azul-royal);
+    margin-bottom: 8px;
+  }
+
+  .form-control {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(17, 28, 46, 0.15);
+    padding: 10px 0;
+    font-family: var(--sans);
+    font-size: 14px;
+    color: var(--grafite);
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+
+  .form-control:focus {
+    border-color: var(--dourado);
+  }
+
+  textarea.form-control {
+    min-height: 100px;
+    resize: none;
+  }
+
+  /* FOOTER */
+  footer {
+    background: var(--azul-escuro);
+    color: rgba(255, 255, 255, 0.65);
+    padding: 80px 0 32px;
+    border-top: 1px solid rgba(197, 160, 89, 0.2);
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr 0.8fr;
+    gap: 60px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .footer-brand .logo-title {
+    color: var(--branco);
+  }
+
+  .footer-brand p {
+    font-size: 13.5px;
+    line-height: 1.8;
+    max-width: 300px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 16px;
+  }
+
+  .footer-social {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+  }
+
+  .footer-social a {
+    width: 36px;
+    height: 36px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .footer-social a:hover {
+    border-color: var(--dourado-claro);
+    background: rgba(197, 160, 89, 0.1);
+    color: var(--dourado-claro);
+    transform: translateY(-2px);
+  }
+
+  .footer-social svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  footer h4 {
+    font-family: var(--sans);
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--branco);
+    margin-bottom: 24px;
+    font-weight: 700;
+  }
+
+  footer ul li {
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+
+  footer ul li a {
+    transition: color 0.3s ease;
+  }
+
+  footer ul li a:hover {
+    color: var(--dourado-claro);
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-top: 32px;
+    font-size: 12.5px;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  .footer-bottom a {
+    margin-left: 20px;
+    transition: color 0.3s ease;
+  }
+
+  .footer-bottom a:hover {
+    color: var(--dourado-claro);
+  }
+
+  /* BOTÃO WHATSAPP INTELIGENTE */
+  .wa-float {
+    position: fixed;
+    bottom: 26px; right: 26px;
+    z-index: 300;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #25D366;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.8);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .wa-float.show {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+
+  .wa-float:hover {
+    transform: scale(1.08);
+    box-shadow: 0 14px 30px rgba(37, 211, 102, 0.5);
+  }
+
+  .wa-float svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--branco);
+  }
+
+  /* EFEITO DE ENTRADA SUAVE (SCROLL REVEAL) */
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .reveal.in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Otimização de Performance */
+  @media (prefers-reduced-motion: reduce) {
+    .reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+    .wa-float { transition: none; }
+  }
+
+  /* RESPONSIVIDADE E ACABAMENTO MOBILE (GRID & TIMELINE) */
+  @media (max-width: 1024px) {
+    .sobre-grid {
+      grid-template-columns: 1fr;
+      gap: 72px;
+    }
+    .sobre-visual {
+      max-width: 440px;
+      margin: 0 auto;
+    }
+    .card-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+    .dif-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+    .steps {
+      grid-template-columns: 1fr 1fr;
+      row-gap: 48px;
+    }
+    .steps::before {
+      display: none; /* Elimina linhas truncadas */
+    }
+    .contato-split {
+      grid-template-columns: 1fr;
+      gap: 56px;
+    }
+  }
+
+  @media (max-width: 850px) {
+    .hero .wrap {
+      grid-template-columns: 1fr;
+      gap: 64px;
+    }
+    .hero-photo {
+      order: -1;
+      max-width: 320px;
+      margin: 0 auto;
+    }
+    .hero-text .lede {
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    nav.main-nav, header .header-actions .btn-gold {
+      display: none; /* Oculta elementos clássicos de desktop */
+    }
+    .hamburger {
+      display: flex;
+    }
+    section {
+      padding: 88px 0;
+    }
+    .card-grid, .dif-grid, .steps {
+      grid-template-columns: 1fr;
+    }
+    .footer-grid {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    .hero-benefits {
+      grid-template-columns: 1fr;
+    }
+    .hero-ctas .btn {
+      width: 100%;
+    }
+    .footer-bottom {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .footer-bottom div {
+      margin-top: 10px;
+    }
+    .footer-bottom a {
+      margin-left: 0;
+      margin-right: 16px;
+    }
+    .contato-form {
+      padding: 32px 24px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .wrap {
+      padding: 0 20px;
+    }
+    .hero {
+      padding: 120px 0 64px;
+    }
+    .photo-caption {
+      left: 16px;
+      right: 16px;
+      padding: 12px 16px;
+    }
+    .sobre-visual .quote-tag {
+      left: 12px;
+      right: 12px;
+      bottom: -20px;
+      font-size: 15px;
+      padding: 16px 20px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER NAVBAR -->
+<header id="siteHeader">
+  <div class="wrap">
+    <a href="#inicio" class="brand">
+      <span class="logo-title">Micheline Lopes</span>
+      <div class="logo-divider"></div>
+      <span class="logo-sub">Advocacia</span>
+    </a>
+    
+    <nav class="main-nav">
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#atuacao">Atuação</a>
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    
+    <div class="header-actions">
+      <a class="btn btn-gold wa-link" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.148.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"></path><path d="M12.05 2C6.53 2 2.05 6.48 2.05 12c0 1.85.5 3.58 1.365 5.07L2 22l5.06-1.393A9.94 9.94 0 0 0 12.05 22C17.57 22 22.05 17.52 22.05 12S17.57 2 12.05 2zm0 18.13a8.1 8.1 0 0 1-4.13-1.13l-.296-.176-3.005.827.81-2.93-.192-.303A8.12 8.12 0 1 1 20.17 12a8.14 8.14 0 0 1-8.12 8.13z"></path></svg>
+        Fale pelo WhatsApp
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE NAVIGATION -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="#inicio">Início</a>
+  <a href="#sobre">Sobre</a>
+  <a href="#atuacao">Atuação</a>
+  <a href="#diferenciais">Diferenciais</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contato">Contato</a>
+  <a class="btn btn-gold wa-link" href="#" target="_blank" rel="noopener">Conversar pelo WhatsApp</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <div class="hero-text">
+      <div class="eyebrow">Dra. Micheline Lopes</div>
+      <h1>Atendimento Jurídico Estratégico para Servidores Públicos e Militares</h1>
+      <p class="lede">Se você enfrenta uma questão jurídica que exige atenção técnica, responsabilidade e acompanhamento individualizado, conte com uma atuação pautada pela ética, proximidade e compromisso com os seus direitos.</p>
+
+      <ul class="hero-benefits">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Atendimento Individualizado</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Presencial & Online</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Retorno Rápido & Seguro</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Linguagem Clara e Objetiva</li>
+      </ul>
+
+      <div class="hero-ctas">
+        <a class="btn btn-wa wa-link" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.148.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"></path><path d="M12.05 2C6.53 2 2.05 6.48 2.05 12c0 1.85.5 3.58 1.365 5.07L2 22l5.06-1.393A9.94 9.94 0 0 0 12.05 22C17.57 22 22.05 17.52 22.05 12S17.57 2 12.05 2zm0 18.13a8.1 8.1 0 0 1-4.13-1.13l-.296-.176-3.005.827.81-2.93-.192-.303A8.12 8.12 0 1 1 20.17 12a8.14 8.14 0 0 1-8.12 8.13z"></path></svg>
+          Iniciar Atendimento pelo WhatsApp
+        </a>
+        <a class="btn btn-outline-gold" href="#atuacao">Áreas de Atuação</a>
+      </div>
+
+      <div class="trust-row">
+        <span>Transparência</span>
+        <span>Agilidade</span>
+        <span>Acolhimento Jurídico</span>
+      </div>
+    </div>
+
+    <div class="hero-photo">
+      <div class="photo-frame">
+        <div class="photo-inner">
+          <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=800&auto=format&fit=crop" alt="Dra. Micheline Lopes, advogada">
+        </div>
+        <div class="photo-caption">
+          <div class="name">Micheline Lopes</div>
+          <div class="role">Advogada · OAB/ES 41.527</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE A ADVOGADA -->
+<section class="bg-white" id="sobre">
+  <div class="wrap">
+    <div class="sobre-grid">
+      <div class="sobre-visual reveal">
+        <div class="frame">
+          <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=900&auto=format&fit=crop" alt="Estúdio de Advocacia Micheline Lopes">
+        </div>
+        <div class="quote-tag">“A vivência de trinta anos servindo a instituições públicas hoje atua com exclusividade na defesa dos seus direitos.”</div>
+      </div>
+      <div class="sobre-text reveal">
+        <div class="eyebrow">Sobre a Advogada</div>
+        <h2>Sólida Trajetória Acadêmica e Profissional</h2>
+        <p class="sub">Compromisso prático moldado pela experiência institucional.</p>
+        <p>A atuação da Dra. Micheline Lopes traz consigo a bagagem profissional de trinta anos servindo ativamente no seio da Polícia Militar do Estado do Espírito Santo (PMES), conhecendo de forma direta e profunda todos os meandros de carreiras públicas, processos disciplinares e regulamentações internas.</p>
+        <p>Essa herança prática é aliada a uma rigorosa dedicação acadêmica: é Graduada em Direito, Mestre em Direito Constitucional pela UNLZ (Argentina) e doutoranda em Direito Constitucional pela tradicional Universidade de Jaén (Espanha).</p>
+        <p>A união dessas duas esferas possibilita uma advocacia preventiva e contenciosa que compreende não apenas a letra fria da lei, mas também a realidade humana de cada servidor público, militar e cidadão envolvido na causa.</p>
+        <a class="btn btn-outline wa-link" href="#" target="_blank" rel="noopener">Falar Conosco Pessoalmente</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ÁREAS DE ATUAÇÃO -->
+<section class="bg-off" id="atuacao">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <div class="eyebrow">Áreas de Atuação</div>
+      <h2>Soluções Jurídicas Estratégicas</h2>
+      <p>Desenvolvemos soluções sólidas e específicas, com foco em segurança jurídica e transparência.</p>
+    </div>
+    
+    <div class="card-grid">
+      <!-- Card 1 -->
+      <div class="area-card reveal">
+        <span class="num">01</span>
+        <h3>Direito dos Servidores Públicos</h3>
+        <p>Assessoria em regimes jurídicos, planos de carreira, processos administrativos disciplinares (PAD), progressões salariais e aposentadoria especial.</p>
+        <a class="area-link wa-link" data-area="Direito dos Servidores Públicos" href="#" target="_blank" rel="noopener">Falar sobre esse assunto →</a>
+      </div>
+      <!-- Card 2 -->
+      <div class="area-card reveal">
+        <span class="num">02</span>
+        <h3>Direito Militar</h3>
+        <p>Direitos funcionais de praças e oficiais, sindicâncias, processos de conselho de disciplina, promoções retroativas, licenças e assessoria em inquérito penal militar.</p>
+        <a class="area-link wa-link" data-area="Direito Militar" href="#" target="_blank" rel="noopener">Falar sobre esse assunto →</a>
+      </div>
+      <!-- Card 3 -->
+      <div class="area-card reveal">
+        <span class="num">03</span>
+        <h3>Direito Previdenciário</h3>
+        <p>Análise de tempo de contribuição, pedidos de aposentadoria no RGPS/RPPS, auxílio por incapacidade temporária, pensão por morte e BPC/LOAS.</p>
+        <a class="area-link wa-link" data-area="Direito Previdenciário" href="#" target="_blank" rel="noopener">Falar sobre esse assunto →</a>
+      </div>
+      <!-- Card 4 -->
+      <div class="area-card reveal">
+        <span class="num">04</span>
+        <h3>Direito de Família</h3>
+        <p>Processos que exigem cuidado e acolhimento humano: divórcios amigáveis ou litigiosos, pensões alimentícias, partilha de bens e inventários judiciais ou extrajudiciais.</p>
+        <a class="area-link wa-link" data-area="Direito de Família" href="#" target="_blank" rel="noopener">Falar sobre esse assunto →</a>
+      </div>
+      <!-- Card 5 -->
+      <div class="area-card reveal">
+        <span class="num">05</span>
+        <h3>Consultoria Preventiva</h3>
+        <p>Identificação de riscos contratuais ou estatutários e blindagem jurídica de planos futuros para garantir estabilidade antes de litígios.</p>
+        <a class="area-link wa-link" data-area="Consultoria Jurídica Preventiva" href="#" target="_blank" rel="noopener">Falar sobre esse assunto →</a>
+      </div>
+    </div>
+    
+    <div class="areas-cta reveal">
+      <a class="btn btn-gold wa-link" href="#" target="_blank" rel="noopener">Analisar Caso Concreto</a>
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIAIS -->
+<section class="bg-azul" id="diferenciais">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <div class="eyebrow">Diferenciais</div>
+      <h2>Por Que Escolher Nosso Escritório?</h2>
+      <p>Nosso diferencial é fundado em valores éticos, solidez técnica e foco nas necessidades específicas de cada cliente.</p>
+    </div>
+    
+    <div class="dif-grid reveal">
+      <div class="dif-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+        </div>
+        <h3>Atendimento Individualizado</h3>
+        <p>Análise cirúrgica de cada documento e atendimento customizado para encontrar a melhor tese cabível.</p>
+      </div>
+      <div class="dif-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2 3 6v6c0 5 4 8.5 9 10 5-1.5 9-5 9-10V6l-9-4z"/></svg>
+        </div>
+        <h3>Transparência em Cada Etapa</h3>
+        <p>Atualizações contínuas sobre o andamento do processo para que você saiba exatamente o que está acontecendo.</p>
+      </div>
+      <div class="dif-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h3>Comunicação Descomplicada</h3>
+        <p>Sem jargões desnecessários ou "juridiquês". Explicamos a realidade dos seus direitos com total clareza.</p>
+      </div>
+      <div class="dif-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="1"/><path d="M3 9h18M8 3v3M16 3v3"/></svg>
+        </div>
+        <h3>Atendimento Remoto e Presencial</h3>
+        <p>Segurança digital para assinatura de contratos e envio de arquivos sem que você precise sair de casa.</p>
+      </div>
+      <div class="dif-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2 3 6v6c0 5 4 8.5 9 10 5-1.5 9-5 9-10V6l-9-4z"/><path d="M9 12l2 2 4-4"/></svg>
+        </div>
+        <h3>Estatuto de Ética OAB</h3>
+        <p>Absoluto compromisso ético e respeito ao sigilo das suas informações pessoais e profissionais.</p>
+      </div>
+      <div class="dif-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <h3>Próximo de Você</h3>
+        <p>Espaço físico estabelecido em Anchieta/ES para atendimento presencial e discussões de caso.</p>
+      </div>
+    </div>
+    
+    <div class="dif-cta reveal">
+      <a class="btn btn-outline-gold wa-link" href="#" target="_blank" rel="noopener">Fazer Pergunta Direta no WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA O ATENDIMENTO -->
+<section class="bg-white">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <div class="eyebrow">Como Funciona</div>
+      <h2>Processo Descomplicado</h2>
+      <p>Trabalhamos de forma transparente e estruturada em quatro etapas simples.</p>
+    </div>
+    
+    <div class="steps reveal">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Primeiro Contato</h3>
+        <p>Você envia uma mensagem rápida contando qual é o seu principal problema atual.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Análise Inicial</h3>
+        <p>Nossa equipe jurídica analisa os detalhes preliminares do caso e agendamos a consulta.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Desenho da Estratégia</h3>
+        <p>Apresentamos as soluções jurídicas possíveis, os documentos necessários e as alternativas de ação.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <h3>Execução Segura</h3>
+        <p>Iniciamos a ação de forma dinâmica, mantendo você atualizado em cada nova movimentação judicial.</p>
+      </div>
+    </div>
+    
+    <div class="steps-cta reveal">
+      <a class="btn btn-gold wa-link" href="#" target="_blank" rel="noopener">Iniciar Meu Atendimento</a>
+    </div>
+  </div>
+</section>
+
+<!-- SEÇÃO DE CONFIANÇA -->
+<section class="confianca">
+  <div class="wrap reveal">
+    <div class="eyebrow" style="justify-content:center;">Segurança Pessoal</div>
+    <h2>Tranquilidade para Suas Decisões</h2>
+    <p>Conflitos jurídicos podem minar sua paz e prejudicar seu rendimento profissional. Obter assessoria especializada logo no começo da demanda diminui riscos, poupa recursos financeiros e traz a tranquilidade que você precisa.</p>
+    <a class="btn btn-gold wa-link" href="#" target="_blank" rel="noopener">Conversar Diretamente</a>
+  </div>
+</section>
+
+<!-- FAQ INTERATIVO -->
+<section class="bg-off" id="faq">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <div class="eyebrow">Perguntas Frequentes</div>
+      <h2>Respostas Claras para Suas Dúvidas</h2>
+    </div>
+    
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-q"><span>É possível fazer o atendimento 100% online?</span><span class="plus"></span></button>
+        <div class="faq-a">
+          <p>Sim. Atualmente, o sistema do Poder Judiciário é totalmente digitalizado. Conseguimos coletar assinaturas, analisar arquivos de processos e peticionar em qualquer comarca de forma 100% remota com total segurança.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>Há algum custo na primeira mensagem de contato?</span><span class="plus"></span></button>
+        <div class="faq-a">
+          <p>Não. A primeira mensagem inicial pelo WhatsApp serve para coletar os dados básicos da sua demanda e agendar a análise oficial do caso concreto.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>Quais os documentos principais que devo organizar?</span><span class="plus"></span></button>
+        <div class="faq-a">
+          <p>Geralmente, documentos de identificação pessoal (RG, CPF), comprovante de endereço e, dependendo do caso, contracheques recentes, atos de nomeação/demissão ou relatórios médicos. Nossa equipe orientará você detalhadamente.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>O escritório atua em outras regiões do Brasil?</span><span class="plus"></span></button>
+        <div class="faq-a">
+          <p>Sim. Devido à digitalização nacional dos processos eletrônicos, conseguimos atuar e representar clientes em instâncias administrativas e judiciais de todo o território brasileiro.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="faq-cta reveal">
+      <a class="btn btn-outline wa-link" href="#" target="_blank" rel="noopener">Ainda tem outra pergunta? Fale Conosco</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO + FORMULÁRIO MINIMALISTA PREMIUM -->
+<section class="bg-white" id="contato">
+  <div class="wrap reveal">
+    <div class="contato-split">
+      <!-- Lado Esquerdo: Dados de Contato com Ícones Finos -->
+      <div class="contato-info">
+        <div class="eyebrow">Contato</div>
+        <h2>Estamos Prontos para Ouvir Você</h2>
+        <p>Seja por canais digitais ou em nosso escritório físico, nossa prioridade é oferecer um atendimento digno, acolhedor e focado na resolução efetiva de sua questão.</p>
+        
+        <ul class="contato-list">
+          <li>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div class="text-content">
+              <strong>Telefone / WhatsApp</strong>
+              <span>(28) 99926-2696</span>
+            </div>
+          </li>
+          <li>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="text-content">
+              <strong>Correio Eletrônico</strong>
+              <span>contato@michelinelopes.adv.br</span>
+            </div>
+          </li>
+          <li>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="text-content">
+              <strong>Localização Física</strong>
+              <span>Rua Marechal Deodoro, nº 140, Sala 02, Centro — Anchieta/ES</span>
+            </div>
+          </li>
+          <li>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="text-content">
+              <strong>Horário de Atendimento</strong>
+              <span>Segunda a Sexta-feira: 09h às 18h</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Lado Direito: Formulário Minimalista de Alta Conversão -->
+      <div class="contato-form">
+        <form id="leadForm">
+          <div class="form-group">
+            <label for="name">Nome Completo</label>
+            <input type="text" id="name" class="form-control" placeholder="Ex: Micheline Lopes" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Seu Melhor E-mail</label>
+            <input type="email" id="email" class="form-control" placeholder="Ex: contato@exemplo.com" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Telefone / WhatsApp</label>
+            <input type="tel" id="phone" class="form-control" placeholder="Ex: (28) 99933-2810" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem ou Breve Resumo do Caso</label>
+            <textarea id="message" class="form-control" placeholder="Nos dê detalhes básicos sobre seu caso..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold" style="width: 100%;">Enviar Solicitação</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#inicio" class="brand" style="display: inline-flex;">
+          <span class="logo-title" style="font-size: 16px;">Micheline Lopes</span>
+          <div class="logo-divider" style="background: var(--dourado);"></div>
+          <span class="logo-sub" style="font-size: 9px;">Advocacia</span>
+        </a>
+        <p>Atendimento jurídico pautado pela ética, solidez técnica acadêmica e transparência absoluta.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Acessar Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="#" aria-label="Acessar LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#" class="wa-link" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.148.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"></path></svg></a>
+        </div>
+      </div>
+      
+      <div>
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre a Advogada</a></li>
+          <li><a href="#atuacao">Áreas de Atuação</a></li>
+          <li><a href="#diferenciais">Nossos Diferenciais</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contato">Fale Conosco</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h4>Registro Profissional</h4>
+        <ul>
+          <li>Micheline Lopes</li>
+          <li>Inscrição: OAB/ES 41.527</li>
+          <li>Anchieta, Espírito Santo</li>
+          <li>Brasil</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <span>© 2026 Micheline Lopes Advocacia. Todos os direitos reservados.</span>
+      <div>
+        <a href="#">Diretrizes de Privacidade</a>
+        <a href="#">Termos e Condições</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP BOTÃO FLUTUANTE CONDICIONAL -->
+<a href="#" target="_blank" rel="noopener" class="wa-float wa-link" id="waFloat" aria-label="Contatar agora pelo WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.148.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"></path><path d="M12.05 2C6.53 2 2.05 6.48 2.05 12c0 1.85.5 3.58 1.365 5.07L2 22l5.06-1.393A9.94 9.94 0 0 0 12.05 22C17.57 22 22.05 17.52 22.05 12S17.57 2 12.05 2zm0 18.13a8.1 8.1 0 0 1-4.13-1.13l-.296-.176-3.005.827.81-2.93-.192-.303A8.12 8.12 0 1 1 20.17 12a8.14 8.14 0 0 1-8.12 8.13z"></path></svg>
+</a>
+
+<script>
+  // ---------- CONFIGURAÇÃO DO WHATSAPP ----------
+  const WHATSAPP_NUMBER = "5528999262696"; // Número real da advogada atualizado
+  const WHATSAPP_MESSAGE_DEFAULT = "Olá, Dra. Micheline! Vi seu site e gostaria de agendar uma consulta inicial.";
+  
+  const getWaUrl = (customMessage) => {
+    return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(customMessage)}`;
+  };
+
+  // Preenche todos os links com base nas seções
+  document.querySelectorAll('.wa-link').forEach(el => {
+    const area = el.getAttribute('data-area');
+    const message = area 
+      ? `Olá, Dra. Micheline! Estava navegando no seu site e gostaria de tirar dúvidas sobre: ${area}.`
+      : WHATSAPP_MESSAGE_DEFAULT;
+    el.setAttribute('href', getWaUrl(message));
+  });
+
+  // ---------- STICKY NAVBAR ----------
+  const header = document.getElementById('siteHeader');
+  const handleNavbar = () => {
+    if (window.scrollY > 40) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  };
+  window.addEventListener('scroll', handleNavbar, { passive: true });
+  handleNavbar();
+
+  // ---------- MENU MOBILE INTERATIVO ----------
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobileNav');
+  
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    mobileNav.classList.toggle('open');
+    document.body.style.overflow = mobileNav.classList.contains('open') ? 'hidden' : '';
+  });
+
+  mobileNav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      mobileNav.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  });
+
+  // ---------- ACCORDION (FAQ) ----------
+  document.querySelectorAll('.faq-item').forEach(item => {
+    const trigger = item.querySelector('.faq-q');
+    const answer = item.querySelector('.faq-a');
+    
+    trigger.addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+      
+      // Fecha outros itens (Comportamento Clássico Sanfona)
+      document.querySelectorAll('.faq-item.open').forEach(opened => {
+        if (opened !== item) {
+          opened.classList.remove('open');
+          opened.querySelector('.faq-a').style.maxHeight = null;
+        }
+      });
+      
+      if (isOpen) {
+        item.classList.remove('open');
+        answer.style.maxHeight = null;
+      } else {
+        item.classList.add('open');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+      }
+    });
+  });
+
+  // ---------- APARIÇÃO CONDICIONAL DO WHATSAPP FLUTUANTE (300px) ----------
+  const waFloat = document.getElementById('waFloat');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      waFloat.classList.add('show');
+    } else {
+      waFloat.classList.remove('show');
+    }
+  }, { passive: true });
+
+  // ---------- SCROLL REVEAL (EFEITOS DE ANIMAÇÃO) ----------
+  const revealElements = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+
+  revealElements.forEach(el => observer.observe(el));
+
+  // ---------- SUBMISSÃO DE CONTATO (MOCK DE LEAD) ----------
+  document.getElementById('leadForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const msg = document.getElementById('message').value;
+
+    // Gerando o texto para direcionar para o WhatsApp
+    const leadsMsg = `Nome: ${name}%0AEmail: ${email}%0ATelefone: ${phone}%0ACaso: ${msg}`;
+    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${leadsMsg}`, '_blank');
+  });
+</script>
+
+</body>
+</html>
